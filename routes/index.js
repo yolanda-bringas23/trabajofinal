@@ -9,13 +9,13 @@ router.get('/', function(req, res, next) {
 
 router.get('/personas', controllers.listPersonas);
 router.get('/agregar', controllers.agregarPersona);
-//router.post("/agregar", controllers.postAgregarPersona);
-//router.get('/edit/:id', controllers.getEditarPersona);
-//router.post('/update/:id', controllers.postUpdatePersona);
-//router.get('/delete/:id', controllers.getDeletePersona);
-//router.post('/delete/:id', controllers.postDeletePersona);
-//router.get('/buscar', controllers.buscarPersona);
-//router.post('/resultados', controllers.buscarPersonaResultados);
+router.post("/agregar", controllers.postAgregarPersona);
+router.get('/edit/:id', controllers.getEditarPersona);
+router.post('/update/:id', controllers.postUpdatePersona);
+router.get('/delete/:id', controllers.getDeletePersona);
+router.post('/delete/:id', controllers.postDeletePersona);
+router.get('/buscar', controllers.buscarPersona);
+router.post('/resultados', controllers.buscarPersonaResultados);
 
 
 module.exports = router;
